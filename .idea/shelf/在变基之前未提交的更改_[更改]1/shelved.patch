@@ -1,0 +1,21 @@
+Index: bot_test/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import botpy\r\nfrom botpy.types.message import Message\r\n\r\nclass MyClient(botpy.Client):\r\n    async def on_at_message_create(self, message: Message):\r\n        await message.reply(content=\"Hello, World!\")\r\n\r\nintents = botpy.Intents(public_guild_messages=True)\r\nclient = MyClient(intents=intents)\r\n# client.run(appid=\"[your_app_id]\", token=\"[your_token]\")\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/bot_test/__init__.py b/bot_test/__init__.py
+--- a/bot_test/__init__.py	(revision ac52cb248bf26aa70e508f73d9b0039998c68457)
++++ b/bot_test/__init__.py	(date 1737353895759)
+@@ -1,10 +1,0 @@
+-import botpy
+-from botpy.types.message import Message
+-
+-class MyClient(botpy.Client):
+-    async def on_at_message_create(self, message: Message):
+-        await message.reply(content="Hello, World!")
+-
+-intents = botpy.Intents(public_guild_messages=True)
+-client = MyClient(intents=intents)
+-# client.run(appid="[your_app_id]", token="[your_token]")
