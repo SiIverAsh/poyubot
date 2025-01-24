@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10a7037e-ba45-426c-a60a-7b8e5c5be695" name="更改" comment="create filestruct">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_test/config/secrets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_test/resource/utils/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot_test/resource/utils/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_test/resource/utils/db_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot_test/resource/utils/db_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +22,34 @@
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SiIverAsh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SiIverAsh/poyubot.git&quot;,
+    &quot;accountId&quot;: &quot;ac731403-3ccd-41af-9277-0d2dffbfc20f&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/bot_test/resource/plugins/latest_tweet_scraping.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -35,17 +62,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.bottest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cookie.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cookie_get.executor&quot;: &quot;Run&quot;,
+    &quot;Python.date_sort.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_latest_tweets_shots.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_special_tweet_shot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_tweets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.latest_tweet_scraping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.proxytest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scraping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.screen_shot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sort.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tweets_scraping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.x_plugin.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/python/botpy-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\python\bottest\bot_test\resource\scrapy" />
+      <recent name="E:\python\bottest\bot_test\resource\utils" />
       <recent name="E:\python\bottest\bot_test" />
     </key>
   </component>
@@ -66,6 +122,17 @@
       <option name="presentableId" value="Default" />
       <updated>1737343336107</updated>
       <workItem from="1737343336983" duration="15000" />
+      <workItem from="1737369630457" duration="1176000" />
+      <workItem from="1737462580687" duration="2827000" />
+      <workItem from="1737469272551" duration="660000" />
+      <workItem from="1737518629388" duration="2734000" />
+      <workItem from="1737526429093" duration="6776000" />
+      <workItem from="1737542750926" duration="8569000" />
+      <workItem from="1737592210384" duration="25103000" />
+      <workItem from="1737625474384" duration="1093000" />
+      <workItem from="1737678582535" duration="14202000" />
+      <workItem from="1737697122372" duration="6760000" />
+      <workItem from="1737706711315" duration="451000" />
     </task>
     <task id="LOCAL-00001" summary="initializition">
       <option name="closed" value="true" />
@@ -83,12 +150,52 @@
       <option name="project" value="LOCAL" />
       <updated>1737355601215</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create filestruct">
+      <option name="closed" value="true" />
+      <created>1737356003828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737356003828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initializition" />
     <MESSAGE value="create filestruct" />
     <option name="LAST_COMMIT_MESSAGE" value="create filestruct" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bottest$proxytest.coverage" NAME="proxytest 覆盖结果" MODIFIED="1737698785635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/scrapy" />
+    <SUITE FILE_PATH="coverage/bottest$bottest.coverage" NAME="bottest 覆盖结果" MODIFIED="1737693996370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test" />
+    <SUITE FILE_PATH="coverage/bottest$test2.coverage" NAME="test2 覆盖结果" MODIFIED="1737687802936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/scrapy" />
+    <SUITE FILE_PATH="coverage/bottest$sort.coverage" NAME="sort 覆盖结果" MODIFIED="1737617892718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$date_sort.coverage" NAME="date_sort 覆盖结果" MODIFIED="1737682347644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$screen_shot.coverage" NAME="screen_shot 覆盖结果" MODIFIED="1737531349146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$cookie.coverage" NAME="cookie 覆盖结果" MODIFIED="1737603290915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$get_special_tweet_shot.coverage" NAME="get_special_tweet_shot 覆盖结果" MODIFIED="1737706803843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/scrapy" />
+    <SUITE FILE_PATH="coverage/bottest$test.coverage" NAME="test 覆盖结果" MODIFIED="1737698719601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/scrapy" />
+    <SUITE FILE_PATH="coverage/bottest$cookie_get.coverage" NAME="cookie_get 覆盖结果" MODIFIED="1737600794892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$get_latest_tweets_shots.coverage" NAME="get_latest_tweets_shots 覆盖结果" MODIFIED="1737706812832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/scrapy" />
+    <SUITE FILE_PATH="coverage/bottest$scraping.coverage" NAME="scraping 覆盖结果" MODIFIED="1737597442633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$latest_tweet_scraping.coverage" NAME="latest_tweet_scraping 覆盖结果" MODIFIED="1737599415684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$x_plugin.coverage" NAME="x_plugin 覆盖结果" MODIFIED="1737370792761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/plugins" />
+    <SUITE FILE_PATH="coverage/bottest$tweets_scraping.coverage" NAME="tweets_scraping 覆盖结果" MODIFIED="1737686119431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/scrapy" />
+    <SUITE FILE_PATH="coverage/bottest$get_tweets.coverage" NAME="get_tweets 覆盖结果" MODIFIED="1737706738671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test/resource/scrapy" />
   </component>
 </project>
