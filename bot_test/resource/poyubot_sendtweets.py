@@ -33,6 +33,8 @@ def remove_invalid_control_chars(text):
 def process_tweets_content(tweets_content):
     tweets = json.loads(tweets_content)
     for tweet in tweets:
+        if "内容" in tweet:
+            tweet["内容"] = re.sub(r'http[s]?://\S+', '', tweet["内容"])
         if "推文链接" in tweet:
             del tweet["推文链接"]
         if "图片链接" in tweet:
@@ -56,7 +58,7 @@ def filter_tweets_by_author(tweets_content, author_name):
     return json.dumps(filtered_tweets, ensure_ascii=False, indent=4)
 
 
-test_config = read(os.path.join(os.path.dirname(__file__), "config.yaml"))
+test_config = read(os.path.join(os.path.dirname(__file__), "E:/python/bottest/bot_test/config/config.yaml"))
 _log = logging.get_logger()
 
 
