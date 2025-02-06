@@ -1,3 +1,22 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.13 (bottest)\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 83cafed07ae7a1db39c3a5424e125f2ccec6b533)
++++ b/.idea/misc.xml	(date 1737347537931)
+@@ -1,4 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.13 (bottest)" />
++  </component>
+   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (bottest)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
 Index: .idea/workspace.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
@@ -150,24 +169,5 @@ diff --git a/.idea/workspace.xml b/.idea/workspace.xml
 +  <component name="com.intellij.coverage.CoverageDataManagerImpl">
 +    <SUITE FILE_PATH="coverage/bottest$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1737344009886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot_test" />
 +  </component>
- </project>
-\ No newline at end of file
-Index: .idea/misc.xml
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.13 (bottest)\" project-jdk-type=\"Python SDK\" />\r\n</project>
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
-diff --git a/.idea/misc.xml b/.idea/misc.xml
---- a/.idea/misc.xml	(revision 83cafed07ae7a1db39c3a5424e125f2ccec6b533)
-+++ b/.idea/misc.xml	(date 1737347537931)
-@@ -1,4 +1,7 @@
- <?xml version="1.0" encoding="UTF-8"?>
- <project version="4">
-+  <component name="Black">
-+    <option name="sdkName" value="Python 3.13 (bottest)" />
-+  </component>
-   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (bottest)" project-jdk-type="Python SDK" />
  </project>
 \ No newline at end of file

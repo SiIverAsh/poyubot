@@ -62,4 +62,4 @@ def capture_tweets_screenshots(tweet_file_path, cookies_path):
 
 
 tweet_file_path = "E:/python/bottest/bot_test/poyubot/resource/scrapy/tweets/latest_tweet.txt"
-capture_tweets_screenshots(tweet_file_path, "E:/python/bottest/bot_test/config/cookie.json")
+capture_tweets_screenshots(tweet_file_path, "/bot_test/config/cookie.json")
