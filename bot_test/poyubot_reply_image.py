@@ -10,7 +10,7 @@ from datetime import datetime
 file_path = "./resource/scrapy/tweets/latest_tweet.txt"
 username_list_path = "./resource/scrapy/tweets/username_list.txt"
 image_directory = './resource/scrapy/image'
-image_url_base = " "
+image_url_base = "https://poyutabucket-1340173525.cos.ap-shanghai.myqcloud.com/images"
 log_file_path = "./logs/bot"
 _log = logging.get_logger(log_file_path)
 
@@ -88,7 +88,6 @@ class MyClient(botpy.Client):
                 if message_content:
                     sorted_tweets = filter_tweets_by_author(message_content, author_name)
                     if isinstance(sorted_tweets, list) and sorted_tweets:
-                        # 获取最新的推文（排在最前面的推文）
                         tweet = sorted_tweets[0]
                         tweet_id = tweet.get('推文ID')
                         image_filename = f"{tweet_id}.jpg"
