@@ -6,8 +6,20 @@ from botpy import logging
 from botpy.ext.cog_yaml import read
 from botpy.message import GroupMessage
 
-file_path = "scrapy/tweets/latest_tweet.txt"
-username_list_path = "scrapy/tweets/username_list.txt"
+file_path = "./resource/scrapy/tweets/latest_tweet.txt"
+username_list_path = "./resource/scrapy/tweets/username_list.txt"
+
+# 指定日志文件存放路径
+log_file_path = "logs/bot_log.txt"
+
+# 设置日志文件存放路径
+log_dir = os.path.dirname(log_file_path)
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
+# 创建日志记录器
+_log = logging.get_logger()
+
 
 def read_file(file_path):
     try:
@@ -29,7 +41,6 @@ def read_username_list():
 def remove_invalid_control_chars(text):
     return re.sub(r'[\x00-\x1F\x7F]', '', text)
 
-
 def process_tweets_content(tweets_content):
     tweets = json.loads(tweets_content)
     for tweet in tweets:
@@ -40,7 +51,6 @@ def process_tweets_content(tweets_content):
         if "图片链接" in tweet:
             del tweet["图片链接"]
     return json.dumps(tweets, ensure_ascii=False, indent=4)
-
 
 def filter_tweets_by_author(tweets_content, author_name):
     tweets_content = remove_invalid_control_chars(tweets_content)
@@ -57,10 +67,7 @@ def filter_tweets_by_author(tweets_content, author_name):
 
     return json.dumps(filtered_tweets, ensure_ascii=False, indent=4)
 
-
 test_config = read(os.path.join(os.path.dirname(__file__), "E:/python/bottest/bot_test/config/config.yaml"))
-_log = logging.get_logger()
-
 
 class MyClient(botpy.Client):
     async def on_group_at_message_create(self, message: GroupMessage):
@@ -72,7 +79,6 @@ class MyClient(botpy.Client):
             usernames = read_username_list()
 
             if usernames:
-                # 创建用户选择菜单
                 options = "\n".join([f"{i + 1}. {username}" for i, username in enumerate(usernames)])
                 prompt = f"请选择：\n{options}"
                 await self.api.post_group_message(
@@ -124,7 +130,6 @@ class MyClient(botpy.Client):
                 )
         else:
             _log.info("未进行选择。")
-
 
 if __name__ == "__main__":
     intents = botpy.Intents(public_messages=True)

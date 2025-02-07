@@ -31,7 +31,7 @@ def get_tweets(url, scroll_timeout=20):
     chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(options=chrome_options)
 
-    file_path = "/bot_test/config/cookie.json"
+    file_path = "E:/python/bottest/bot_test/config/cookie.json"
     with open(file_path, "r", encoding="utf-8") as f:
         cookies = json.load(f)
         driver.get(url)
@@ -149,4 +149,4 @@ def get_tweets(url, scroll_timeout=20):
         print("没有新推文需要写入！")
 
 
-get_tweets(" ", scroll_timeout=30)
+get_tweets("", scroll_timeout=30)
