@@ -9,17 +9,11 @@ from botpy.message import GroupMessage
 file_path = "./resource/scrapy/tweets/latest_tweet.txt"
 username_list_path = "./resource/scrapy/tweets/username_list.txt"
 
-# 指定日志文件存放路径
 log_file_path = "logs/bot_log.txt"
-
-# 设置日志文件存放路径
 log_dir = os.path.dirname(log_file_path)
 if not os.path.exists(log_dir):
     os.makedirs(log_dir)
-
-# 创建日志记录器
 _log = logging.get_logger()
-
 
 def read_file(file_path):
     try:
