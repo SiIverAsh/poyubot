@@ -48,7 +48,7 @@ class TweetRetriever:
         self.driver.get(self.url)
 
         tweets = []
-        total_tweets = 10
+        total_tweets = 5
         fetched_tweets = 0
         last_scroll_time = time.time()
 
@@ -131,7 +131,7 @@ class TweetRetriever:
         return tweets
 
     def save_tweets_to_file(self, tweets):
-        file_path = "./tweets/latest_tweet.txt"
+        file_path = "./scrapy/tweets/latest_tweet.txt"
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:
                 try:
@@ -154,9 +154,9 @@ class TweetRetriever:
         else:
             print("没有新推文需要写入！")
 
-# test
-if __name__ == "__main__":
-    tweet_retriever = TweetRetriever(" ", scroll_timeout=30)
-    tweets = tweet_retriever.get_tweets()
-    tweet_retriever.save_tweets_to_file(tweets)
+#test
+# if __name__ == "__main__":
+#     tweet_retriever = TweetRetriever(" url ", scroll_timeout=10)
+#     tweets = tweet_retriever.get_tweets()
+#     tweet_retriever.save_tweets_to_file(tweets)
 

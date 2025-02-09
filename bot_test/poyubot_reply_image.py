@@ -9,7 +9,7 @@ from datetime import datetime
 
 file_path = "./resource/scrapy/tweets/latest_tweet.txt"
 username_list_path = "./resource/scrapy/tweets/username_list.txt"
-image_directory = './resource/scrapy/image'
+image_directory = 'E:/python/bottest/bot_test/resource/image'
 image_url_base = "https://poyutabucket-1340173525.cos.ap-shanghai.myqcloud.com/images"
 log_file_path = "./logs/bot"
 _log = logging.get_logger(log_file_path)
